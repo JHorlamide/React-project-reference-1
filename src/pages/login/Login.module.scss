@@ -1,0 +1,47 @@
+@import "../../styles/include-media";
+
+.loginBox {
+  box-shadow: 0px 15px 50px rgba(131, 134, 157, 0.25);
+
+  @include media("<=phone") {
+    box-shadow: none;
+  }
+}
+
+.formBox {
+  width: 100%;
+}
+
+.leftSection {
+  @include media("<=tablet") {
+    background-image: url("../../../public/images/login-img-one-min.png");
+    background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.rightSection {
+  background: linear-gradient(
+    176.73deg,
+    rgba(28, 57, 17, 0.126) 40.82%,
+    rgba(27, 68, 44, 0.549) 53.59%,
+    rgba(14, 71, 38, 0.9) 91.93%
+  );
+}
+
+.firstImg {
+  background-image: url("../../../public/images/login-img-one-min.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

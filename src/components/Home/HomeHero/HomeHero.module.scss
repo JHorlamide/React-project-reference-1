@@ -1,0 +1,158 @@
+@import "../../../styles/include-media";
+
+.img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.face_one {
+  position: absolute;
+  top: 40px;
+  left: 110px;
+  z-index: 2;
+  height: 410px;
+  width: 410px;
+
+  @include media("<=1100px") {
+    height: 350px;
+    width: 350px;
+  }
+
+  @include media("<=992px") {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    left: 0;
+    top: 0;
+  }
+
+  @include media("<=640px") {
+    left: 40px;
+  }
+}
+
+.face_two {
+  position: absolute;
+  top: 340px;
+  left: 200px;
+  z-index: 3;
+  height: 245px;
+  width: 245px;
+
+  @include media("<=1100px") {
+    height: 205px;
+    width: 205px;
+    top: 280px;
+    left: 190px;
+  }
+
+  @include media("<=992px") {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    left: 0;
+    top: 0;
+  }
+}
+
+.face_three {
+  position: absolute;
+  left: -80px;
+  top: 40px;
+  height: 245px;
+  width: 245px;
+  z-index: 1;
+
+  @include media("<=1100px") {
+    height: 205px;
+    width: 205px;
+    left: -50px;
+  }
+
+  @include media("<=992px") {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    left: 0;
+    top: 0;
+  }
+
+  @include media("<=640px") {
+    left: -40px;
+  }
+}
+
+.face_bg_one {
+  position: absolute;
+  top: 190px;
+  right: -20px;
+  z-index: 4;
+  height: 100px;
+  width: 100px;
+
+  @include media("<=1280px") {
+    right: -35px;
+  }
+
+  @include media("<=1200px") {
+    display: none;
+  }
+}
+
+.face_bg_two {
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  z-index: 0;
+  height: 150px;
+  width: 150px;
+
+  @include media("<=1100px") {
+    height: 110px;
+    width: 110px;
+    top: 200px;
+    left: 40px;
+  }
+
+  @include media("<=992px") {
+    display: none;
+  }
+}
+
+.face_bg_three {
+  position: absolute;
+  top: 250px;
+  left: 10px;
+  z-index: 0;
+  height: 160px;
+  width: 160px;
+
+  @include media("<=1100px") {
+    height: 120px;
+    width: 120px;
+    top: 210px;
+    left: 30px;
+  }
+
+  @include media("<=992px") {
+    display: none;
+  }
+}
+
+.face_bg_four {
+  position: absolute;
+  top: 40px;
+  left: 110px;
+  z-index: 0;
+  height: 120px;
+  width: 120px;
+
+  @include media("<=1100px") {
+    height: 80px;
+    width: 80px;
+  }
+
+  @include media("<=992px") {
+    display: none;
+  }
+}

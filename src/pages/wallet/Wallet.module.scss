@@ -1,0 +1,15 @@
+@import "../../styles/include-media";
+
+.leftBox {
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+  background-image: url("../../../public/images/wallet-svg-one.svg"),
+    url("../../../public/images/wallet-svg-two.svg"),
+    linear-gradient(150.58deg, rgba(92, 178, 58, 0.8) 0%, rgba(4, 128, 2, 0.8) 100%);
+  background-repeat: no-repeat;
+  background-size: initial, contain, contain;
+  background-position: 0% 0%, 0% 0%, initial;
+}
+
+.rightBox {
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+}

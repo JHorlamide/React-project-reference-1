@@ -1,0 +1,11 @@
+@import "../../../styles/include-media";
+
+.img {
+  object-fit: cover;
+}
+
+.btn {
+  @include media("<=1000px") {
+    display: none;
+  }
+}

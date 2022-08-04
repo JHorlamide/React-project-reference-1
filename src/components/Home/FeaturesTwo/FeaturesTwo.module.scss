@@ -1,0 +1,17 @@
+@import "../../../styles/include-media";
+
+.container {
+  background-image: url("../../../../public/images/features_bg_one.svg"),
+    url("../../../../public/images/features_bg_two.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 28%, 100% 22%;
+
+  @include media("<=1050px") {
+    background-image: none;
+  }
+}
+
+.image {
+  border-radius: 8px;
+  object-fit: cover;
+}
